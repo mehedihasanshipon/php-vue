@@ -54,11 +54,6 @@
 							</tbody>
 						</table>
 					</div>
-					<!-- Pagination -->
-					<!-- <div v-if="branches.data.length">
-						<Pagination :links="branches.links" :to="branches.to" :from="branches.from" :total="branches.total" />
-					</div> -->
-					<!-- End Pagination -->
 				</div>
 			</div>
 		</div>
@@ -98,14 +93,11 @@
 		</TransitionRoot>
 		<!--End Modal -->
 	</app-layout>
-	<!-- <Notification /> -->
 </template>
 
 <script>
 import {defineComponent, reactive, ref, watch} from "vue"
 import AppLayout from "@/Layouts/AppLayout.vue"
-// import Notification from "@/Components/Notification.vue"
-// import Pagination from "@/Components/Pagination.vue"
 import Breadcrumb from "../Components/Breadcrumb.vue"
 import {Link} from "@inertiajs/inertia-vue3"
 import {Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot, Switch} from "@headlessui/vue"
@@ -126,8 +118,6 @@ export default defineComponent({
 		TransitionRoot,
 		ExclamationIcon,
 		Switch,
-		// Notification,
-		// Pagination,
 	},
 	props: {
 		marks: Array,
